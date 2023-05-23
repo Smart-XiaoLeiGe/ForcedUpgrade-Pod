@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ForcedUpgrade'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Force upgrade app interact with cloud service.'
 
 # This description is used to generate tags and improve search results.
@@ -27,7 +27,7 @@ In case that others have same requirements, I create the library. Then enjoy !
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Lei' => 'wanglei_sh163@163.com' }
-  s.source           = { :git => 'https://github.com/Smart-XiaoLeiGe/ForcedUpgrade-Pod.git', :tag => s.version.to_s }
+  s.source           = { :git => 'git@github.com:Smart-XiaoLeiGe/ForcedUpgrade-Pod.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '13.0'
