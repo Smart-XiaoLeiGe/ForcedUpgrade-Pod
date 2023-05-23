@@ -1,0 +1,6 @@
+framework module ForcedUpgrade {
+  umbrella header "ForcedUpgrade-umbrella.h"
+
+  export *
+  module * { export * }
+}
