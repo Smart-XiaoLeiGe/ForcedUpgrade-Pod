@@ -7,20 +7,14 @@
 //
 
 import UIKit
-import ForcedUpgrade
+
 
 class ViewController: UIViewController {
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-//        let view = ForcedUpgrade().alertView(response: "{\"forceUpgrade\":1,\"description\":\"给我个理由\",\"title\":\"Notice\"}")
-//        if view != nil {
-//            self.view.addSubview(view)
-//        }else{
-//
-//        }
-//
     }
 
     override func didReceiveMemoryWarning() {

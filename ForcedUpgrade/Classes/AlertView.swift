@@ -7,10 +7,17 @@
 
 import SwiftUI
 
-@available(iOS 13.0, *)
 public struct AlertView: View {
-    var showModel: ShowModel
-
+    var showModel: CheckUpgradeResponseModel
+    let cancelAction: () -> Void
+    let confirmAction: () -> Void
+    
+    public init(showModel: CheckUpgradeResponseModel, cancelAction: @escaping () -> Void,  confirmAction: @escaping () -> Void) {
+        self.showModel = showModel
+        self.cancelAction = cancelAction
+        self.confirmAction = confirmAction
+    }
+    
     public var body: some View {
         VStack {
             Text(showModel.title)
@@ -20,13 +27,18 @@ public struct AlertView: View {
             Text(showModel.description).padding(EdgeInsets.init(top: 20, leading: 0, bottom: 30, trailing: 0))
             Divider()
             HStack {
-                if showModel.forceUpgrade == false {
-                    Button {} label: {
+                if showModel.forcedUpgrade == false {
+                    Button {
+                        cancelAction()
+                    } label: {
                         Text("Cancel")
                     }
                 }
                 Spacer()
-                Button {} label: {
+                Button {
+                    confirmAction()
+                    
+                } label: {
                     Text("Confirm")
                 }
             }.padding(EdgeInsets(top: 20, leading: 20, bottom: 50, trailing: 20))
@@ -37,6 +49,11 @@ public struct AlertView: View {
 struct AlertView_Previews: PreviewProvider {
     @available(iOS 13.0.0, *)
     static var previews: some View {
-        AlertView(showModel: ShowModel(showAlertView: true, forceUpgrade: true, title: "123", description: "456"))
+        AlertView(showModel: CheckUpgradeResponseModel(forcedUpgrade: true, newVersion: "1.2.3", title: "123", description: "456")) {
+            
+        } confirmAction: {
+            
+        }
+
     }
 }

@@ -44,7 +44,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8FECDED7A1315F8E7B93825B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		93ED9BB6C97953653611EACA /* Pods-ForcedUpgrade_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForcedUpgrade_Example.debug.xcconfig"; path = "Target Support Files/Pods-ForcedUpgrade_Example/Pods-ForcedUpgrade_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		A7FB68D921D17300D4F96834 /* ForcedUpgrade.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ForcedUpgrade.podspec; path = ../ForcedUpgrade.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A7FB68D921D17300D4F96834 /* XLGForcedUpgrade.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XLGForcedUpgrade.podspec; path = ../XLGForcedUpgrade.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CF85283446B8EC70811FF97B /* Pods-ForcedUpgrade_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForcedUpgrade_Tests.release.xcconfig"; path = "Target Support Files/Pods-ForcedUpgrade_Tests/Pods-ForcedUpgrade_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D2CBDA20EACE8AB04BD1D416 /* Pods_ForcedUpgrade_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForcedUpgrade_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -143,7 +143,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				A7FB68D921D17300D4F96834 /* ForcedUpgrade.podspec */,
+				A7FB68D921D17300D4F96834 /* XLGForcedUpgrade.podspec */,
 				4BF0C32DB6E3F71E850B9E9A /* README.md */,
 				8FECDED7A1315F8E7B93825B /* LICENSE */,
 			);
@@ -213,10 +213,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = RN649S32T9;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = RN649S32T9;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -292,13 +294,13 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ForcedUpgrade_Example/Pods-ForcedUpgrade_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ForcedUpgrade/ForcedUpgrade.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/XLG-BundleInfos/XLG_BundleInfos.framework",
+				"${BUILT_PRODUCTS_DIR}/XLGForcedUpgrade/XLGForcedUpgrade.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForcedUpgrade.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLG_BundleInfos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLGForcedUpgrade.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -506,6 +508,7 @@
 			baseConfigurationReference = 93ED9BB6C97953653611EACA /* Pods-ForcedUpgrade_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RN649S32T9;
 				INFOPLIST_FILE = ForcedUpgrade/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -522,6 +525,7 @@
 			baseConfigurationReference = 09C58E59C6F501A611AFF157 /* Pods-ForcedUpgrade_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RN649S32T9;
 				INFOPLIST_FILE = ForcedUpgrade/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -537,6 +541,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3114E4FAA9DFC135D145137E /* Pods-ForcedUpgrade_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = RN649S32T9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -560,6 +565,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CF85283446B8EC70811FF97B /* Pods-ForcedUpgrade_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = RN649S32T9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

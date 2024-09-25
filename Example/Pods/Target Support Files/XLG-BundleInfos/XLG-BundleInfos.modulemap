@@ -1,0 +1,6 @@
+framework module XLG_BundleInfos {
+  umbrella header "XLG-BundleInfos-umbrella.h"
+
+  export *
+  module * { export * }
+}

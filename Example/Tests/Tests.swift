@@ -2,7 +2,7 @@
 
 import Quick
 import Nimble
-import ForcedUpgrade
+import XLGForcedUpgrade
 
 class TableOfContentsSpec: QuickSpec {
     override func spec() {

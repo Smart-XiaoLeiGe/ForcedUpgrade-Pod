@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'ForcedUpgrade'
-  s.version          = '0.1.1'
-  s.summary          = 'Force upgrade app interact with cloud service.'
+  s.name             = 'XLGForcedUpgrade'
+  s.version          = '0.1.2'
+  s.summary          = 'Based on the data returned by the backend service, a page is displayed to alert the user to upgrade。'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -41,6 +41,7 @@ In case that others have same requirements, I create the library. Then enjoy !
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'SwiftUI'
-  s.dependency 'SwiftyJSON', '5.0.0'
+  s.dependency 'XLG-BundleInfos', '0.1.1'
+  
 
 end

@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double ForcedUpgradeVersionNumber;
-FOUNDATION_EXPORT const unsigned char ForcedUpgradeVersionString[];
+FOUNDATION_EXPORT double XLG_BundleInfosVersionNumber;
+FOUNDATION_EXPORT const unsigned char XLG_BundleInfosVersionString[];
 

@@ -1,0 +1,6 @@
+framework module XLGForcedUpgrade {
+  umbrella header "XLGForcedUpgrade-umbrella.h"
+
+  export *
+  module * { export * }
+}
